@@ -1,0 +1,17 @@
+@echo off 
+rem set the user -specified directories
+set Docs=%USERPROFILE%\Documents 
+set desktop=%USERPROFILE%\Desktop
+set downloads=%USERPROFILE%\Downloads
+rem set the current directory where the script is runninng set cdir =%CD%
+
+rem Certain Directories inside the current directory (where the script runs)
+
+mkdir "%cdir%\Backup\docs"
+mkdir "%cdir%\Backup\desktop"
+mkdir "%cdir%\Backup\downloads"
+
+rem Copy files from the users directories  to the current directory's subfolders
+xcopy /E/I/H "%docs%\*" "%cdir%\Backup\docs"
+xcopy /E/I/H "%desktop%\*" "%cdir%\Backup\desktop"
+xcopy /E/I/H "%downloads%\*" "%cdir%\Backup\downloads"
