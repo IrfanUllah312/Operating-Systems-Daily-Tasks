@@ -1,0 +1,39 @@
+
+                                     ===========Command Line Interface ============
+
+                                                Commman Commands :
+
+1 mkdir  FolderName -> For making a new directory (folder )
+
+2 dir   ->for showing all the files of the current directory . 
+       CURRENT DIRECTORY --> the Directory on Which you are present now
+
+3 del (file Name )---> For Deleting any file 
+3.1  rmdir  folder name ---> delet a folder if it is empty 
+3.2  rmdir /s folder name ---> delet a folder along with its contents
+
+4.cd(Change Directory ) ---> to move folder /backward  
+                      ** cd nextDirectoryName /directorypath 
+                      **cd.. move one step backword 
+		      **Cd ..\.. move Two step Backward and so on .
+
+5 . move {Surce-file/folderName }{Destination Relative /Absolute Path }
+
+6.Copy {Source -File/FolderName }{Destination
+
+7. ren (REName ) {oldNmae }{newName }--> rename a folder /File 
+
+8. ..--> Point previous Directory 
+        . --> Point Currnt Directory .
+
+cls -->  Clear the full environament 
+
+
+                           ====================Scripting ==================
+
+	set variable Name path --> use for  Assinging specified path to the 
+			   variable whenever we need we just call the variable with % variable 
+			   name %  intead of full path .
+	copy *.txt %variableName % -->  copy all the txt file 
+	copy *.pdf %variableName % -->  copy all the pdf file 
+ 	 .extention  %variableName % -->  copy/move etc  all the txt file 
